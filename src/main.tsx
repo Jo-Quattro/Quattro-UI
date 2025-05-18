@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import App from "./App.tsx";
 import Home from "./pages/Home.tsx";
+import Details from "./pages/Details.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -11,6 +12,11 @@ const router = createBrowserRouter([
 			{
 				path: "/", // The root path
 				element: <Home />,
+			},
+			{
+				path: "/details",
+				element: <Details />,
+				children: [{ path: "/details/:id", element: <Details /> }],
 			},
 		],
 	},
