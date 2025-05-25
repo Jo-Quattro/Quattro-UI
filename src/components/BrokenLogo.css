@@ -1,0 +1,60 @@
+.block-primary-main {
+	font-size: 2rem;
+	animation: blink 12s infinite;
+}
+
+.e {
+	color: #111;
+	position: relative;
+	&::after {
+		content: "e";
+		position: absolute;
+		padding-bottom: 36px;
+		left: 0px;
+		top: -15px;
+		width: 100%;
+		text-align: center;
+		color: white;
+		rotate: 180deg;
+		animation: rotating 1.3s infinite linear, blink 3s infinite;
+	}
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0);
+	}
+	25% {
+		transform: rotate(25deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	75% {
+		transform: rotate(-25deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes blink {
+	20%,
+	24%,
+	55% {
+		color: #111;
+		text-shadow: none;
+	}
+	0%,
+	19%,
+	21%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+		text-shadow: 0 0 5px #ff1493ad, 0 0 15px #eee, 0 0 20px #ff1493ad, 0 0 40px
+			#a00ac9, 0 0 60px #ff0000, 0 0 10px #970dc5, 0 0 98px #ff0000;
+		color: #fff;
+	}
+}
