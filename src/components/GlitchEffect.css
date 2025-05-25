@@ -1,0 +1,54 @@
+@import "tailwindcss";
+.glitch-shadow {
+	text-shadow: 0.01em 0 0 rgba(255, 0, 0, 0.75), 0.02em 0 0
+		rgba(0, 255, 0, 0.75), -0.02em 0 0 rgba(0, 0, 255, 0.75);
+}
+.span-1 {
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+	transform: translate(-0.015em, -0.0125em);
+}
+.span-2 {
+	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+
+	transform: translate(0.025em, 0.0125em);
+}
+@theme {
+	@keyframes glitch {
+		0% {
+			text-shadow: 0.06em 0 0 rgba(255, 0, 0, 0.75), -0.03em -0.025em 0
+				rgba(0, 255, 0, 0.75), -0.04em -0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+		24% {
+			text-shadow: 0.06em 0 0 rgba(255, 0, 0, 0.75), -0.03em -0.025em 0
+				rgba(0, 255, 0, 0.75), -0.04em -0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+		25% {
+			text-shadow: -0.02em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0 0
+				rgba(0, 255, 0, 0.75), -0.02em 0 0 rgba(0, 0, 255, 0.75);
+		}
+		49% {
+			text-shadow: -0.02em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0 0
+				rgba(0, 255, 0, 0.75), -0.02em 0 0 rgba(0, 0, 255, 0.75);
+		}
+		50% {
+			text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.035em 0 0
+				rgba(0, 255, 0, 0.75), -0.05em 0 -0.05em rgba(0, 0, 255, 0.75);
+		}
+		74% {
+			text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.035em 0 0
+				rgba(0, 255, 0, 0.75), -0.05em 0 -0.05em rgba(0, 0, 255, 0.75);
+		}
+		75% {
+			text-shadow: 0.08em 0 0 rgba(255, 0, 0, 0.75), 0.02em 0 0
+				rgba(0, 255, 0, 0.75), -0.015em 0 -0.035em rgba(0, 0, 255, 0.75);
+		}
+		99% {
+			text-shadow: 0.08em 0 0 rgba(255, 0, 0, 0.75), 0.02em 0 0
+				rgba(0, 255, 0, 0.75), -0.015em 0 -0.035em rgba(0, 0, 255, 0.75);
+		}
+		100% {
+			text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), 0.01em 0 0
+				rgba(0, 255, 0, 0.75), 0 -0.025em 0 rgba(0, 0, 255, 0.75);
+		}
+	}
+}
