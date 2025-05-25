@@ -6,13 +6,13 @@ import Footer from "./components/Footer";
 function App() {
 	return (
 		<>
-			<header className="h-30 bg-blue-500">
+			<header>
 				<Header />
 			</header>
-			<main className="bg-black h-500">
+			<main>
 				<Outlet />
 			</main>
-			<footer className="h-30 bg-red-500">
+			<footer>
 				<Footer />
 			</footer>
 		</>
