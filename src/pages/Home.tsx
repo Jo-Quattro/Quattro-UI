@@ -1,7 +1,9 @@
+import CarouselComponent from "../components/CarouselComponent";
+
 function Home() {
 	return (
-		<section className="h-500 bg-gray-950 text-gray-300 text-center ">
-			<h1>Hello Home</h1>
+		<section className="bg-gray-950 text-white flex flex-col items-center justify-center h-screen">
+			<CarouselComponent />
 		</section>
 	);
 }

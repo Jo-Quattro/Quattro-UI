@@ -7,7 +7,7 @@ function SocialFanAnimated() {
 	const { id } = useParams();
 	return (
 		<Link to={`./Details/${id}`}>
-			<section className="rounded-xl ring ring-white/[1] text-center w-fit p-5 group hover:duration-500">
+			<section className="rounded-xl ring-1 ring-gray-700 w-45 h-25 text-center p-5 group hover:duration-500 shadow-md shadow-gray-500/20">
 				<div className="flex justify-center isolate">
 					<div className="size-12 bg-white rounded-xl relative grid place-items-center ring-1 ring-black/[0.08] left-2.5 -top-1 -rotate-10 group-hover:-translate-x-5 group-hover:-rotate-20 transition duration-500">
 						<a
