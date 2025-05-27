@@ -3,12 +3,14 @@ import BrokenLogo from "./BrokenLogo";
 import Card from "./Card";
 import GlitchEffect from "./GlitchEffect";
 import NeonButton from "./NeonButton";
+import AnimatedGradientText from "./AnimatedGradientText";
 
 const components = [
 	<SocialFanAnimated key={1} />,
 	<BrokenLogo key={2} />,
 	<NeonButton key={3} />,
 	<GlitchEffect key={4} />,
+	<AnimatedGradientText key={5} />,
 ];
 
 function CarouselComponent() {
