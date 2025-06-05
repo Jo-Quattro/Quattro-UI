@@ -1,12 +1,13 @@
 import { Outlet } from "react-router";
 import "./index.css";
-import Header from "./components/Header";
+import Header from "./components/small/Header";
 import Footer from "./components/Footer";
 
 function App() {
 	return (
 		<>
-			<header>
+		<body className="bg-gray-950">
+			<header className="sticky top-0 z-1">
 				<Header />
 			</header>
 			<main>
@@ -14,9 +15,8 @@ function App() {
 			</main>
 			<footer>
 				<Footer />
-			</footer>
+			</footer></body>
 		</>
 	);
 }
-
 export default App;
