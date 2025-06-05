@@ -25,7 +25,7 @@ function CarouselComponent() {
         transition={{duration : 25, repeat: Infinity, ease : "linear" }}
          className="flex flex-shrink-0"
       >
-        {[...components,].map((component, idx) => (
+        {[...components].map((component, idx) => (
           <small.Card id={idx + 1} key={idx}>
             {component}
           </small.Card>
@@ -37,7 +37,7 @@ function CarouselComponent() {
         transition={{duration : 25, repeat: Infinity, ease : "linear" }}
          className="flex flex-shrink-0"
       >
-        {[...components,].map((component, idx) => (
+        {[...components].map((component, idx) => (
           <small.Card id={idx + 1} key={idx}>
             {component}
           </small.Card>
@@ -49,7 +49,7 @@ function CarouselComponent() {
         transition={{duration : 25, repeat: Infinity, ease : "linear" }}
          className="flex flex-shrink-0"
       >
-        {[...components,].map((component, idx) => (
+        {[...components].map((component, idx) => (
           <small.Card id={idx + 1} key={idx}>
             {component}
           </small.Card>
