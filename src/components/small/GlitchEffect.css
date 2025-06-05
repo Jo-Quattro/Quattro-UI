@@ -5,12 +5,12 @@
 }
 .span-1 {
 	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
-	transform: translate(-0.015em, -0.0125em);
+	transform: translate(-0.005em, -0.0125em);
 }
 .span-2 {
 	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
 
-	transform: translate(0.025em, 0.0125em);
+	transform: translate(0.005em, 0.0125em);
 }
 @theme {
 	@keyframes glitch {
