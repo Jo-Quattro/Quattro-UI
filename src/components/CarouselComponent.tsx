@@ -1,26 +1,63 @@
-import SocialFanAnimated from "./socialFanAnimated";
-import BrokenLogo from "./BrokenLogo";
-import Card from "./Card";
-import GlitchEffect from "./GlitchEffect";
-import NeonButton from "./NeonButton";
-import AnimatedGradientText from "./AnimatedGradientText";
+import * as small from "./small/SmallIndex";
+import { motion } from "framer-motion";
+
 
 const components = [
-	<SocialFanAnimated key={1} />,
-	<BrokenLogo key={2} />,
-	<NeonButton key={3} />,
-	<GlitchEffect key={4} />,
-	<AnimatedGradientText key={5} />,
+  <small.SocialFanAnimated />,
+  <small.BrokenLogo />,
+  <small.NeonButton />,
+  <small.GlitchEffect />,
+  <small.AnimatedGradientText />,
+  <small.SlicedText />,
 ];
 
 function CarouselComponent() {
-	return (
-		<section className="flex justify-center overflow-x-scroll border-y-1 border-gray-700 bg-gray-950 h-50 w-full gap-3 items-center">
-			{[...components].map((component) => (
-				<Card key={component.key}>{component}</Card>
-			))}
-		</section>
-	);
+
+
+
+
+  return (
+    <div className="container h-40 mx-auto mask-l-from-80% mask-r-from-80%">
+      <div className="flex ">
+      <motion.div
+        initial={{x : 0}}
+        animate={{ x : "-100%"}}
+        transition={{duration : 25, repeat: Infinity, ease : "linear" }}
+         className="flex flex-shrink-0"
+      >
+        {[...components,].map((component, idx) => (
+          <small.Card id={idx + 1} key={idx}>
+            {component}
+          </small.Card>
+        ))}
+      </motion.div>
+       <motion.div
+        initial={{x : 0}}
+        animate={{ x : "-100%"}}
+        transition={{duration : 25, repeat: Infinity, ease : "linear" }}
+         className="flex flex-shrink-0"
+      >
+        {[...components,].map((component, idx) => (
+          <small.Card id={idx + 1} key={idx}>
+            {component}
+          </small.Card>
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{x : 0}}
+        animate={{ x : "-100%"}}
+        transition={{duration : 25, repeat: Infinity, ease : "linear" }}
+         className="flex flex-shrink-0"
+      >
+        {[...components,].map((component, idx) => (
+          <small.Card id={idx + 1} key={idx}>
+            {component}
+          </small.Card>
+        ))}
+      </motion.div>
+      </div>
+    </div>
+  );
 }
 
 export default CarouselComponent;

@@ -1,6 +1,6 @@
 @import "tailwindcss";
-body * {
-	@apply box-border;
+* {
+  box-sizing: border-box;
 }
 
 /* reduit les animations CSS selon les preferences de l'utilisateur */
