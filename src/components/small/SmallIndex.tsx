@@ -1,4 +1,4 @@
-export { default as SocialFanAnimated } from "./socialFanAnimated";
+export { default as SocialFanAnimated } from "./SocialFanAnimated";
 export { default as BrokenLogo } from "./BrokenLogo";
 export { default as NeonButton } from "./NeonButton";
 export { default as GlitchEffect } from "./GlitchEffect";

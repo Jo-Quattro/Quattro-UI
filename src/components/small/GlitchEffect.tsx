@@ -4,7 +4,7 @@ import "./GlitchEffect.css";
 
 function GlitchEffect() {
 	return (
-		<section className=" flex rounded-xl ring-1 ring-gray-700 w-45 h-25 text-center justify-center align-middle p-4 group hover:duration-500 shadow-md shadow-gray-500/20">
+		<section className=" flex w-45 h-25 justify-center p-4">
 			<h2 className="glitch-shadow relative uppercase animate-[glitch_500ms_infinite] glitch text-[2.8rem] size-12 w-fit z-10">
 				<span
 					className=" span-1 absolute inset-0 animate-[glitch_750ms_infinite] opacity-0.3"
