@@ -7,7 +7,7 @@ interface CardProps {
   id: number;
 }
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 function Card({ children, id }: CardProps) {
   const [hover, setHover] = useState(false);
@@ -18,7 +18,6 @@ function Card({ children, id }: CardProps) {
     animate: { opacity: 1 },
     transition: { duration: 3 },
   };
-
   return (
     <div
       onMouseEnter={handleMouseEnter}
@@ -29,7 +28,7 @@ function Card({ children, id }: CardProps) {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={fadeIn.transition}
-        className="flex flex-col rounded-xl w-45 h-30 p-3 justify-center items-center gap-20 max-w-50 shadow-md mr-4"
+        className="flex flex-col rounded-xl w-45 h-30 p-3 justify-center items-center gap-20 max-w-50 mr-4"
       >
         {children}
       </motion.div>

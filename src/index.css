@@ -12,7 +12,6 @@ h3 {
 p {
   font-family: Urbanist;
   font-size: medium;
-  color: white;
 }
 /* reduit les animations CSS selon les preferences de l'utilisateur */
 @media (prefers-reduced-motion: reduce) {
