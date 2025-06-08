@@ -22,7 +22,7 @@ function Footer() {
         <a
           href="https://www.linkedin.com/in/jordan-aulagnier-54621a247/"
           target="blank"
-          className="hover:brightness-90 active:brightness-60"
+          className="hover:brightness-80 active:brightness-60"
         >
           <img src={linkedinWhite} alt="Linkedin Logo" className="w-10" />
         </a>

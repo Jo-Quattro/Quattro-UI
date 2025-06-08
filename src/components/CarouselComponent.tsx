@@ -17,7 +17,7 @@ function CarouselComponent() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
           {[...components].map((component, idx) => (
@@ -29,7 +29,7 @@ function CarouselComponent() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
           {[...components].map((component, idx) => (
@@ -41,7 +41,7 @@ function CarouselComponent() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
           {[...components].map((component, idx) => (
