@@ -10,13 +10,13 @@ const components = [
   <small.SlicedText />,
 ];
 
-function CarouselComponent() {
+function InvertedCarouselComponent() {
   return (
     <div className="flex items-center container h-50 mx-auto mask-l-from-80% mask-r-from-80% border-y-white border-[.1px]">
       <div className="flex ">
         <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
+          initial={{ x: "-100%" }}
+          animate={{ x: 0 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
@@ -27,8 +27,8 @@ function CarouselComponent() {
           ))}
         </motion.div>
         <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
+          initial={{ x: "-100%" }}
+          animate={{ x: 0 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
@@ -39,8 +39,8 @@ function CarouselComponent() {
           ))}
         </motion.div>
         <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
+          initial={{ x: "-100%" }}
+          animate={{ x: 0 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0"
         >
@@ -55,4 +55,4 @@ function CarouselComponent() {
   );
 }
 
-export default CarouselComponent;
+export default InvertedCarouselComponent;
