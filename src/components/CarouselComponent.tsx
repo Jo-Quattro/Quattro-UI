@@ -12,7 +12,7 @@ const components = [
 
 function CarouselComponent() {
   return (
-    <div className="flex items-center container h-50 mx-auto mask-l-from-80% mask-r-from-80% border-y-white border-[.1px]">
+    <div className="flex items-top container h-37 mx-auto mask-l-from-80% mask-r-from-80% border-y-white border-[.1px]">
       <div className="flex ">
         <motion.div
           initial={{ x: 0 }}

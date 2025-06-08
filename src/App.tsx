@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-neutral-950 text-neutral-200 h-[100%]">
+    <div className="bg-neutral-950 text-neutral-200 h-full">
       <header className="sticky top-0 z-1">
         <Header />
       </header>
