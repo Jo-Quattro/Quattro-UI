@@ -1,6 +1,10 @@
 import "./SlicedText.css";
 
-function SlicedText() {
+import type { ReactNode } from "react";
+
+function SlicedText({ children }: { children: ReactNode }) {
+
+
   return (
     <section
       className="flex bg-[url('/images/blood-splatter-unsplash-opacity.png')] bg-top-right bg-contain
@@ -8,10 +12,10 @@ function SlicedText() {
     w-45 h-12 p-5"
     >
       <h2
-        style={{ ["--text" as string]: "'Sliced'" }}
+                style={{ "--text": `"${children}"` } as React.CSSProperties}
         className="slice uppercase font-bold text-[2.3rem]"
       >
-        Sliced
+       {children}
       </h2>
     </section>
   );

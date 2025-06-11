@@ -6,12 +6,12 @@ import linkedinWhite from "../assets/logos/linkedinWhite.svg";
 
 function Footer() {
   return (
-    <section className="flex flex-col items-center mb-2 gap-1">
+    <section className="flex flex-col items-center pb-3 gap-1">
       <div className="flex items-center justify-center gap-2">
         <a
           href="https://github.com/jo-quattro"
           target="blank"
-          className="hover:brightness-90  active:brightness-80"
+          className="hover:brightness-80  active:brightness-60"
         >
           <img
             src={gitHubWhite}
@@ -22,14 +22,14 @@ function Footer() {
         <a
           href="https://www.linkedin.com/in/jordan-aulagnier-54621a247/"
           target="blank"
-          className="hover:brightness-90 active:brightness-80"
+          className="hover:brightness-80 active:brightness-60"
         >
           <img src={linkedinWhite} alt="Linkedin Logo" className="w-10" />
         </a>
         <a
           href="http://instagram.com/jordan__stagram"
           target="blank"
-          className="w-8 p-[1px] rounded ring-[1.5px] ring-white hover:brightness-90  active:brightness-80"
+          className="w-8 p-[1px] rounded ring-[1.5px] ring-white hover:brightness-80  active:brightness-60"
         >
           <img
             src={instagramWhite}
@@ -41,7 +41,7 @@ function Footer() {
       <p className="text-white">
         Logos from{" "}
         <a
-          className="underline hover:brightness-90  active:brightness-80"
+          className="underline hover:brightness-80  active:brightness-70"
           href="https://icons8.com/"
           target="blank_"
         >
