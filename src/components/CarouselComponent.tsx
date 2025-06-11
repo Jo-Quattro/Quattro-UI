@@ -7,7 +7,8 @@ const components = [
   <small.NeonButton />,
   <small.GlitchEffect />,
   <small.AnimatedGradientText />,
-  <small.SlicedText />,
+  <small.SlicedText>{"Sliced"}</small.SlicedText>,
+  <small.BlurrEffect />,
 ];
 
 function CarouselComponent() {

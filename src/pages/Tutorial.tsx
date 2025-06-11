@@ -8,6 +8,7 @@ function Tutorial() {
         components and check back soon for updates!
       </p>
     </section>
+
   );
 }
 export default Tutorial;

@@ -73,22 +73,22 @@ function Home() {
       >
         <CarouselComponent />
       </motion.section>
-      <motion.span
+      <motion.p
         initial={{ filter: "blur(10px)", opacity: 0, x: -100 }}
         animate={{ filter: "blur(0)", opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.03 * baseIndex + 1 }}
         className="text-left px-5 leading-relaxed mt-4"
       >
         {paragraph1}
-      </motion.span>
-      <motion.span
+      </motion.p>
+      <motion.p
         initial={{ filter: "blur(10px)", opacity: 0, x: -100 }}
         animate={{ filter: "blur(0)", opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.03 * baseIndex + 1.9 }}
         className="text-left px-5 leading-relaxed mt-4"
       >
         {paragraph2}
-      </motion.span>
+      </motion.p>
     </section>
   );
 }
