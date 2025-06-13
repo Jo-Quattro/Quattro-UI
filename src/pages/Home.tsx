@@ -50,7 +50,7 @@ function Home() {
   let baseIndex = 0;
 
   return (
-    <section className="w-full h-[100%] text-center px-15 flex flex-col items-center gap-8 my-14">
+    <section className="w-full h-[100%] text-center px-15 flex flex-col items-center gap-8 mt-5 mb-12 overflow-hidden mask-l-from-80% mask-r-from-80%">
       <h2 className="font-semibold italic text-4xl">
         {(() => {
           const output = renderAnimatedText(homeTitle, baseIndex);
