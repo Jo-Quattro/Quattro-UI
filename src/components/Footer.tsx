@@ -1,8 +1,8 @@
 /* logos from https://icons8.com/ */
 
-import gitHubWhite from "../assets/logos/gitHubWhite.svg";
-import instagramWhite from "../assets/logos/instagramWhite.svg";
-import linkedinWhite from "../assets/logos/linkedinWhite.svg";
+import gitHubWhite from "@/assets/logos/gitHubWhite.svg";
+import instagramWhite from "@/assets/logos/instagramWhite.svg";
+import linkedinWhite from "@/assets/logos/linkedinWhite.svg";
 
 function Footer() {
   return (
