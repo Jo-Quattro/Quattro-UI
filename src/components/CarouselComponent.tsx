@@ -1,5 +1,5 @@
 import * as small from "./small/SmallIndex";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const components = [
   <small.SocialFanAnimated />,
