@@ -7,7 +7,7 @@ const components = [
   <small.NeonButton />,
   <small.GlitchEffect />,
   <small.AnimatedGradientText />,
-  <small.SlicedText />,
+  <small.SlicedText> {"Sliced"} </small.SlicedText>,
 ];
 
 function InvertedCarouselComponent() {

@@ -5,17 +5,19 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-neutral-950 text-neutral-200 h-full">
-      <header className="sticky top-0 z-1">
-        <Header />
-      </header>
-      <main>
-        <Outlet />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <>
+      <section className="bg-neutral-900 text-white">
+        <header className="sticky w-full top-0 backdrop-blur-md z-100">
+          <Header />
+        </header>
+        <main className="h-full">
+          <Outlet />
+        </main>
+        <footer className="z-100">
+          <Footer />
+        </footer>
+      </section>
+    </>
   );
 }
 export default App;
