@@ -1,6 +1,6 @@
-import gitHubLogo from "../../assets/logos/gitHubLogo.svg";
-import linkedinLogo from "../../assets/logos/linkedinLogo.svg";
-import instagramLogo from "../../assets/logos/instagramLogo.svg";
+import gitHubLogo from "@/assets/logos/gitHubLogo.svg";
+import linkedinLogo from "@/assets/logos/linkedinLogo.svg";
+import instagramLogo from "@/assets/logos/instagramLogo.svg";
 
 function SocialFanAnimated() {
   return (
