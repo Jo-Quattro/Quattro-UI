@@ -6,7 +6,7 @@ import linkedinWhite from "../assets/logos/linkedinWhite.svg";
 
 function Footer() {
   return (
-    <section className="flex flex-col items-center pb-3 gap-1">
+    <section className="flex flex-col items-center pb-3 gap-1 border-t-white border-t-[.1px] py-5 mask-l-from-80% mask-r-from-80%">
       <div className="flex items-center justify-center gap-2">
         <a
           href="https://github.com/jo-quattro"
