@@ -1,6 +1,6 @@
 /* logos from https://icons8.com/ */
 
-import gitHubWhite from "@/assets/logos/gitHubWhite.svg";
+import githubWhite from "@/assets/logos/githubWhite.svg";
 import instagramWhite from "@/assets/logos/instagramWhite.svg";
 import linkedinWhite from "@/assets/logos/linkedinWhite.svg";
 
@@ -14,7 +14,7 @@ function Footer() {
           className="hover:brightness-80 hover:scale-110 active:brightness-60"
         >
           <img
-            src={gitHubWhite}
+            src={githubWhite}
             alt="Github Logo"
             className="w-8 p-[1px] rounded ring-[1.5px] ring-white "
           />
