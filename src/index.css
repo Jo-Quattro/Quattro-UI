@@ -1,19 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
 @import "tailwindcss";
+
 * {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Lexend;
+}
+p {
+  font-family: Urbanist;
+  font-size: medium;
+}
 /* reduit les animations CSS selon les preferences de l'utilisateur */
 @media (prefers-reduced-motion: reduce) {
-	*,
-	::before,
-	::after {
-		animation-delay: -1ms !important;
-		animation-duration: 1ms !important;
-		animation-iteration-count: 1 !important;
-		background-attachment: initial !important;
-		scroll-behavior: auto !important;
-		transition-duration: 1ms !important;
-		transition-delay: -1ms !important;
-	}
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+    transition-delay: -1ms !important;
+  }
 }

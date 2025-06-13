@@ -1,22 +1,23 @@
 import { Outlet } from "react-router";
 import "./index.css";
-import Header from "./components/small/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-	return (
-		<>
-		<body className="bg-gray-950">
-			<header className="sticky top-0 z-1">
-				<Header />
-			</header>
-			<main>
-				<Outlet />
-			</main>
-			<footer>
-				<Footer />
-			</footer></body>
-		</>
-	);
+  return (
+    <>
+      <section className="bg-neutral-900 text-white">
+        <header className="sticky w-full top-0 backdrop-blur-md z-100">
+          <Header />
+        </header>
+        <main className="h-full">
+          <Outlet />
+        </main>
+        <footer className="z-100">
+          <Footer />
+        </footer>
+      </section>
+    </>
+  );
 }
 export default App;

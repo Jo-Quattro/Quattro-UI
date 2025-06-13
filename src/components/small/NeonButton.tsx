@@ -3,7 +3,7 @@ import "./NeonButton.css";
 function NeonButton() {
 	const [changeColor, setChangeColor] = useState(false);
 	return (
-		<section className="flex justify-center items-center rounded-xl ring-1 ring-gray-700 w-45 h-25 text-center p-5 group hover:duration-500 shadow-md shadow-gray-500/20">
+
 			<div
 				className={`animate-rotate-border ${changeColor ? "bg-conic/[from_var(--border-angle)] from-gray-700 via-cyan-400 to-gray-700 from-70% via-85% to-100%" : "bg-conic/[from_var(--border-angle)] from-gray-700 via-purple-500 to-gray-700 from-70% via-85% to-100%"} w-[121px] h-[41px] rounded flex justify-center items-center`}
 			>
@@ -19,7 +19,7 @@ function NeonButton() {
 					</p>
 				</button>
 			</div>
-		</section>
+
 	);
 }
 

@@ -2,12 +2,12 @@
 /*  https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK */
 
 @theme {
-	@keyframes gradient-text {
-		0% {
-			background-position: left;
-		}
-		100% {
-			background-position: right;
-		}
-	}
+  @keyframes gradient-text {
+    0% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
 }
