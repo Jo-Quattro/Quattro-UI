@@ -1,10 +1,8 @@
 import "./SlicedText.css";
-
+// Source : https://css-irl.info/7-uses-for-css-custom-properties/
 import type { ReactNode } from "react";
 
 function SlicedText({ children }: { children: ReactNode }) {
-
-
   return (
     <section
       className="flex bg-[url('/images/blood-splatter-unsplash-opacity.png')] bg-top-right bg-contain
@@ -12,10 +10,10 @@ function SlicedText({ children }: { children: ReactNode }) {
     w-45 h-12 p-5"
     >
       <h2
-                style={{ "--text": `"${children}"` } as React.CSSProperties}
+        style={{ "--text": `"${children}"` } as React.CSSProperties}
         className="slice uppercase font-bold text-[2.3rem]"
       >
-       {children}
+        {children}
       </h2>
     </section>
   );
