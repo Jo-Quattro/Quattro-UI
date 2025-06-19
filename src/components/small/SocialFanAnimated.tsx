@@ -1,7 +1,7 @@
 import gitHubLogo from "@/assets/logos/gitHubLogo.svg";
 import linkedinLogo from "@/assets/logos/linkedinLogo.svg";
 import instagramLogo from "@/assets/logos/instagramLogo.svg";
-
+//Source : https://codepen.io/hwbuk/pen/xxvPXXz
 function SocialFanAnimated() {
   return (
     <section className="group hover:duration-500 ">
